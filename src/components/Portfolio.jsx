@@ -6,7 +6,6 @@ import urlShortener from "../pics/portfolio/url-shortener.png";
 import videoRecommendation from "../pics/portfolio/Video-Recommendation.png";
 
 function Portfolio() {
-
   const projects = [
     {
       id: 1,
@@ -39,7 +38,13 @@ function Portfolio() {
     },
   ];
 
-  
+  function handleDemoClick (demoLink) {
+    window.open(demoLink, "_blank"); 
+  }
+
+  function handleCodeClick (codeLink) {
+    window.open(codeLink, "_blank"); 
+  }
 
   return (
     <div
@@ -57,7 +62,7 @@ function Portfolio() {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, src }) => (
+          {projects.map(({ id, src, codeLink, demoLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -65,10 +70,10 @@ function Portfolio() {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button onClick={() => handleCodeClick(codeLink)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button onClick={() => handleDemoClick(demoLink)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
                 </button>
               </div>
