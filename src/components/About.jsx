@@ -13,8 +13,7 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          I am passionate about the world of technology and the transformative
-          power of software. With a deep curiosity and a desire to create
+          I am passionate about the world of technology and the power of software. With a deep curiosity and a desire to create
           meaningful solutions, I have dedicated myself to mastering the art of
           coding and problem-solving. I believe that software development is
           more than just writing lines of code, it's about crafting elegant and

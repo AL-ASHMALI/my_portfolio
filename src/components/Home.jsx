@@ -15,8 +15,8 @@ function Home() {
             I am a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Passionate creator of transformative solutions with elegant code and
-            a hunger for knowledge.
+            Enthusiastic junior software developer, committed to creating
+            impactful solutions with a hunger for growth.
           </p>
           <div>
             <Link
