@@ -15,11 +15,16 @@ function Home() {
             I am a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            laekhjgflkajhsdlfkhjaslkjhbdflkhjagsldkhjfglakhjsgdlfhj,
-            kgalshjdkgfiireuhrtkladsnjkfbgl;ahjkgedl;fhaedf
+            Passionate creator of transformative solutions with elegant code and
+            a hunger for knowledge.
           </p>
           <div>
-            <Link to='portfolio' smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer"
+            >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardDoubleArrowRight size={30} />

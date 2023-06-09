@@ -8,26 +8,29 @@ const About = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            About
+          </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-          itaque corporis aut dignissimos. Nulla provident eveniet voluptas
-          facere non, aperiam laborum eligendi sunt mollitia, et sapiente
-          corrupti necessitatibus officiis, a quod. Qui non totam dolor,
-          suscipit sed vel voluptate reprehenderit asperiores ea cupiditate
-          ipsam repudiandae laboriosam odit dolores est consequatur sapiente
-          fuga ducimus consequuntur impedit autem magnam. Accusamus, commodi
-          quam?
+          I am passionate about the world of technology and the transformative
+          power of software. With a deep curiosity and a desire to create
+          meaningful solutions, I have dedicated myself to mastering the art of
+          coding and problem-solving. I believe that software development is
+          more than just writing lines of code, it's about crafting elegant and
+          efficient solutions to real-world challenges. I constantly strive to
+          stay on the cutting edge of technology, keeping myself updated with
+          the latest trends and best practices in the industry.
         </p>
         <br />
         <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          nemo aliquam sint dolorum vero. Unde, laboriosam vel exercitationem
-          quibusdam magnam autem expedita. Ducimus aliquid similique tenetur
-          expedita debitis quis doloribus nesciunt minima sequi soluta, non hic
-          quisquam facere quas nemo itaque unde. Illum, dicta maxime. Vel
-          dolorum enim commodi error.
+          Collaboration and teamwork are fundamental to my approach as a
+          developer. I enjoy working with diverse teams, leveraging our
+          collective skills and perspectives to build exceptional software
+          products. Continuous learning is at the heart of my journey as a
+          software developer. I embrace new challenges and see them as
+          opportunities for growth. I actively seek out ways to expand my
+          knowledge and skill set, always striving to improve my craft.
         </p>
       </div>
     </div>
