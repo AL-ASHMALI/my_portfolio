@@ -1,4 +1,7 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -44,6 +47,20 @@ const Contact = () => {
               Lets Chat
             </button>
           </form>
+        </div>
+        <div className="flex flex:row justify-center space-x-20 text-4xl pt-2 lg:hidden ">
+          <a href="https://www.linkedin.com/in/rabie-al-ashmali-264a201b2/">
+            <FaLinkedin className="hover:text-blue-800 hover:text-5xl duration-300"/>
+          </a>
+          <a href="https://github.com/AL-ASHMALI">
+            <FaGithub className="hover:text-5xl duration-300" />
+          </a>
+          <a href="mailto:rabiealashmali@gmail.com">
+            <HiOutlineMail className="hover:text-blue-300 hover:text-5xl duration-300 "/>
+          </a>
+          <a href="/CV.pdf" download={true}>
+            <BsFillPersonLinesFill className="hover:text-5xl hover:text-red-900 duration-300"/>
+          </a>
         </div>
       </div>
     </div>
