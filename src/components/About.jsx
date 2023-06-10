@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-1/2 bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg md:p-5 mx-auto flex flex-col justify-center w-full h-full p-5 pt-16">
         <div className="pb-6">
@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-15 md:mt-20">
           I am passionate about the world of technology and the power of software. With a deep curiosity and a desire to create
           meaningful solutions, I have dedicated myself to mastering the art of
           coding and problem-solving. I believe that software development is
