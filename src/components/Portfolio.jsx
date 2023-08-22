@@ -4,6 +4,7 @@ import tv from "../pics/portfolio/shows-movies.png";
 import studyBuddies from "../pics/portfolio/studyBuddies.png";
 import urlShortener from "../pics/portfolio/url-shortener.png";
 import videoRecommendation from "../pics/portfolio/Video-Recommendation.png";
+import calculator from "../pics/portfolio/Calculator.png";
 
 function Portfolio() {
   const projects = [
@@ -36,14 +37,20 @@ function Portfolio() {
       src: videoRecommendation,
       codeLink: "https://github.com/AL-ASHMALI/Full-Stack-Project-Assessment",
     },
+    {
+      id: 6,
+      src: calculator,
+      codeLink: "https://github.com/AL-ASHMALI/just_a_calculator",
+      demoLink: "https://just-a-calculator.netlify.app/",
+    },
   ];
 
-  function handleDemoClick (demoLink) {
-    window.open(demoLink, "_blank"); 
+  function handleDemoClick(demoLink) {
+    window.open(demoLink, "_blank");
   }
 
-  function handleCodeClick (codeLink) {
-    window.open(codeLink, "_blank"); 
+  function handleCodeClick(codeLink) {
+    window.open(codeLink, "_blank");
   }
 
   return (
@@ -51,7 +58,7 @@ function Portfolio() {
       name="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
-      <div className="max-w-screen-lg md:p-5 mx-auto flex flex-col justify-center w-full h-full p-5 pt-11 " >
+      <div className="max-w-screen-lg md:p-5 mx-auto flex flex-col justify-center w-full h-full p-5 pt-11 ">
         <div className="pb-6">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -70,10 +77,16 @@ function Portfolio() {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button onClick={() => handleCodeClick(codeLink)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  onClick={() => handleCodeClick(codeLink)}
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
                 </button>
-                <button onClick={() => handleDemoClick(demoLink)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  onClick={() => handleDemoClick(demoLink)}
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
                 </button>
               </div>
