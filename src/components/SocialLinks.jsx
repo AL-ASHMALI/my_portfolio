@@ -18,22 +18,13 @@ const SocialLinks = () => {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={35} />
-        </>
-      ),
-      href: "https://github.com/AL-ASHMALI",
-    },
-    {
-      id: 3,
-      child: (
-        <>
           Email <HiOutlineMail size={35} />
         </>
       ),
       href: "mailto:rabiealashmali@gmail.com",
     },
     {
-      id: 4,
+      id: 3,
       child: (
         <>
           CV <BsFillPersonLinesFill size={35} />
