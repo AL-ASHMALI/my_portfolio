@@ -1,5 +1,5 @@
 import React from "react";
-import karma from "../pics/portfolio/karma.png";
+import expenseTracker from "../pics/portfolio/Expense-tracker.png";
 import tv from "../pics/portfolio/shows-movies.png";
 import studyBuddies from "../pics/portfolio/studyBuddies.png";
 import urlShortener from "../pics/portfolio/url-shortener.png";
@@ -10,10 +10,9 @@ function Portfolio() {
   const projects = [
     {
       id: 1,
-      src: karma,
-      codeLink:
-        "https://github.com/AL-ASHMALI/responsive-grid-project/tree/rabie_alashmali",
-      demoLink: "https://cyf-alashmali-karma-clone.netlify.app",
+      src: expenseTracker,
+      codeLink: "https://github.com/AL-ASHMALI/Expense-tracker",
+      demoLink: "https://expense-tracker-rk.onrender.com",
     },
     {
       id: 2,
@@ -74,7 +73,7 @@ function Portfolio() {
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 w-full h-auto"
               />
               <div className="flex items-center justify-center">
                 <button

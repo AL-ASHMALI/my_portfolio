@@ -52,9 +52,6 @@ const Contact = () => {
           <a href="https://www.linkedin.com/in/rabie-al-ashmali-264a201b2/">
             <FaLinkedin className="hover:text-blue-800 hover:text-5xl duration-300" />
           </a>
-          {/* <a href="https://github.com/AL-ASHMALI">
-            <FaGithub className="hover:text-5xl duration-300" />
-          </a> */}
           <a href="mailto:rabiealashmali@gmail.com">
             <HiOutlineMail className="hover:text-blue-300 hover:text-5xl duration-300 " />
           </a>
