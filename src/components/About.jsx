@@ -1,35 +1,27 @@
-import React from "react";
+import React from 'react';
 
 const About = () => {
   return (
     <div
-      name="about"
-      className="w-full h-1/2 bg-gradient-to-b from-gray-800 to-black text-white"
+      name='about'
+      className='w-full h-1/2 bg-gradient-to-b from-gray-800 to-black text-white'
     >
-      <div className="max-w-screen-lg md:p-5 mx-auto flex flex-col justify-center w-full h-full p-5 pt-16">
-        <div className="pb-6">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+      <div className='max-w-screen-lg md:p-5 mx-auto flex flex-col justify-center w-full h-full p-5 pt-16'>
+        <div className='pb-6'>
+          <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
             About
           </p>
         </div>
-        <p className="text-xl mt-15 md:mt-20">
-          I am passionate about the world of technology and the power of software. With a deep curiosity and a desire to create
-          meaningful solutions, I have dedicated myself to mastering the art of
-          coding and problem-solving. I believe that software development is
-          more than just writing lines of code, it's about crafting elegant and
-          efficient solutions to real-world challenges. I constantly strive to
-          stay on the cutting edge of technology, keeping myself updated with
-          the latest trends and best practices in the industry.
-        </p>
-        <br />
-        <p className="text-xl">
-          Collaboration and teamwork are fundamental to my approach as a
-          developer. I enjoy working with diverse teams, leveraging our
-          collective skills and perspectives to build exceptional software
-          products. Continuous learning is at the heart of my journey as a
-          software developer. I embrace new challenges and see them as
-          opportunities for growth. I actively seek out ways to expand my
-          knowledge and skill set, always striving to improve my craft.
+        <p className='text-xl mt-15 md:mt-20'>
+          Passionate about technology and software's transformative power, I
+          immerse myself in coding, driven by curiosity and a quest for
+          impactful solutions. For me, software development transcends mere code
+          it's about elegantly solving real-world problems. Remaining at tech's
+          forefront fuels my pursuit, staying updated on industry trends and
+          practices. Collaborating within diverse teams excites me, pooling our
+          skills for exceptional software. Embracing challenges as avenues for
+          growth, I'm committed to continuous learning, constantly refining my
+          expertise in this ever-evolving field.
         </p>
       </div>
     </div>
