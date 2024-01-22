@@ -1,61 +1,67 @@
 import React from 'react';
 import expenseTracker from '../pics/portfolio/Expense-tracker.png';
-import tv from '../pics/portfolio/shows-movies.png';
 import studyBuddies from '../pics/portfolio/studyBuddies.png';
-import urlShortener from '../pics/portfolio/url-shortener.png';
 import videoRecommendation from '../pics/portfolio/Video-Recommendation.png';
 import calculator from '../pics/portfolio/Calculator.png';
+import Sama from '../pics/portfolio/Sama.png';
+import PortfolioCard from './PortfolioCard';
+import codeyourfuture from '../pics/portfolio/codeyourfuture.png';
 
 function Portfolio() {
   const projects = [
     {
       id: 1,
       src: expenseTracker,
-      codeLink: 'https://github.com/AL-ASHMALI/Expense-tracker',
-      demoLink: 'https://expense-tracker-rk.onrender.com',
+      link: 'https://expense-tracker-rk.onrender.com',
+      title: 'Expense Tracker',
+      description: 'Help track and monitor your expenses',
     },
     {
       id: 2,
-      src: tv,
-      codeLink: 'https://github.com/AL-ASHMALI/tv-show-dom-project',
-      demoLink: 'https://cyf-alashmali-tv.netlify.app',
+      src: Sama,
+      link: 'https://the-shop-omw9.onrender.com',
+      title: 'SAMA',
+      description: 'eCommerce website for great and smooth shopping experience',
     },
     {
       id: 3,
-      src: studyBuddies,
-      codeLink: 'https://github.com/PakizeBozkurt/hugsforbugs',
-      demoLink: 'https://starter-kit-0qci.onrender.com/',
+      src: codeyourfuture,
+      link: 'https://codeyourfuture.io/',
+      title: 'CodeYourFuture',
+      description: 'Training for refugees and disadvantaged people',
     },
     {
       id: 4,
-      src: urlShortener,
-      codeLink: 'https://github.com/AL-ASHMALI/full-stack-url-shortener',
+      src: studyBuddies,
+      link: 'https://github.com/AL-ASHMALI/hugsforbugs',
+      title: 'Study Buddy',
+      description: 'If you have trouble studying alone, this website will help',
     },
+
     {
       id: 5,
       src: videoRecommendation,
-      codeLink: 'https://github.com/AL-ASHMALI/Full-Stack-Project-Assessment',
+      link: 'https://github.com/AL-ASHMALI/Full-Stack-Project-Assessment',
+      title: 'Video Recommendation',
+      description: 'A website for recommending and sharing great videos ',
     },
     {
       id: 6,
       src: calculator,
-      codeLink: 'https://github.com/AL-ASHMALI/just_a_calculator',
-      demoLink: 'https://just-a-calculator.netlify.app/',
+      link: 'https://just-a-calculator.netlify.app',
+      title: 'Just a Calculator',
+      description: 'this is better than your calculator',
     },
   ];
 
-  function handleDemoClick(demoLink) {
-    window.open(demoLink, '_blank');
-  }
-
-  function handleCodeClick(codeLink) {
-    window.open(codeLink, '_blank');
+  function handleClick(link) {
+    window.open(link, '_blank');
   }
 
   return (
     <div
       name='portfolio'
-      className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'
+      className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen pt-24'
     >
       <div className='max-w-screen-lg md:p-5 mx-auto flex flex-col justify-center w-full h-full p-5 pt-11 '>
         <div className='pb-6'>
@@ -68,28 +74,12 @@ function Portfolio() {
         </div>
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {projects.map(({ id, src, codeLink, demoLink }) => (
-            <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-              <img
-                src={src}
-                alt=''
-                className='rounded-md duration-200 hover:scale-105 w-full h-auto'
-              />
-              <div className='flex items-center justify-center'>
-                <button
-                  onClick={() => handleCodeClick(codeLink)}
-                  className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
-                >
-                  Code
-                </button>
-                <button
-                  onClick={() => handleDemoClick(demoLink)}
-                  className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
-                >
-                  Demo
-                </button>
-              </div>
-            </div>
+          {projects.map((project) => (
+            <PortfolioCard
+              key={project.id}
+              project={project}
+              handleCodeClick={handleClick}
+            />
           ))}
         </div>
       </div>

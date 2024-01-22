@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import {Link} from 'react-scroll'; 
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -9,40 +9,40 @@ const NavBar = () => {
     // array of objects containing the links to display in the navigation bar links
     {
       id: 1,
-      link: "home",
+      link: 'home',
     },
 
     {
       id: 2,
-      link: "about",
+      link: 'about',
     },
 
     {
       id: 3,
-      link: "portfolio",
+      link: 'portfolio',
     },
 
     {
       id: 4,
-      link: "experience",
+      link: 'experience',
     },
 
     {
       id: 5,
-      link: "contact",
+      link: 'contact',
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50'>
       <div>
-        <h1 className="text-5xl font-signature ml-2">Rabie</h1>
+        <h1 className='text-5xl font-signature ml-2'>Rabie</h1>
       </div>
-      <ul className="hidden md:flex">
+      <ul className='hidden md:flex'>
         {links.map(({ link, id }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 "
+            className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 '
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -52,19 +52,24 @@ const NavBar = () => {
       </ul>
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className='cursor-pointer pr-4 z-10 text-gray-500 md:hidden'
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && ( // if the nav is on/shown, show the navagation links when clicking the hamburger menu button
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-700 text-gray-400">
+        <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-700 text-gray-400'>
           {links.map(({ link, id }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200"
+              className='px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200'
             >
-              <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
                 {link}
               </Link>
             </li>
