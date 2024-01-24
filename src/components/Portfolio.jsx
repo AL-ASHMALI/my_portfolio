@@ -1,7 +1,7 @@
 import React from 'react';
 import expenseTracker from '../pics/portfolio/Expense-tracker.png';
 import studyBuddies from '../pics/portfolio/studyBuddies.png';
-import videoRecommendation from '../pics/portfolio/Video-Recommendation.png';
+
 import calculator from '../pics/portfolio/Calculator.png';
 import Sama from '../pics/portfolio/Sama.png';
 import PortfolioCard from './PortfolioCard';
@@ -37,16 +37,8 @@ function Portfolio() {
       title: 'Study Buddy',
       description: 'If you have trouble studying alone, this website will help',
     },
-
     {
       id: 5,
-      src: videoRecommendation,
-      link: 'https://github.com/AL-ASHMALI/Full-Stack-Project-Assessment',
-      title: 'Video Recommendation',
-      description: 'A website for recommending and sharing great videos ',
-    },
-    {
-      id: 6,
       src: calculator,
       link: 'https://just-a-calculator.netlify.app',
       title: 'Just a Calculator',
